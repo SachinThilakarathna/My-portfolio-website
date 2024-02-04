@@ -1,0 +1,346 @@
+.skills{
+  float: left;
+
+}
+
+.skill-name{
+  font-weight: 530;
+  color: #bdb6b6;
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.progress-container {
+  width: 300px;
+  height: 10px;
+  overflow: hidden;
+  
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar {
+  height: 10px;
+  background: linear-gradient(to left, #4a0342, #5f076b);
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+.progress-value {
+  margin-left: 10px;
+  font-size:10px ;
+  color: #ccc;
+}
+
+
+
+
+@media only screen and (min-width:1100px){
+  .skills{
+    width: 40%;
+    margin-left: 150px;
+  }
+  .progress-container{
+    width: 75%;
+  }
+}
+@media (min-width:710.1px) and (max-width: 1100px){
+  .skills{
+    width: 30%;
+    margin-left: 100px;
+    margin-bottom: 50px;
+  }
+  .progress-container{
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width:710.1px){
+  .skill-name{
+    margin-left: 80px;
+  }
+  .skills{
+  
+    width: 100%;
+    /* background-color: #3d0555; */
+    margin-bottom: 60px;
+
+  }
+  .progress-container{
+    margin-left: 80px;
+    width: 65%;
+  }
+  
+}
+
+
+/* ----------------------------------------skills Edu Certif-----------------section5 */
+
+
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 19px;
+  position: relative;
+}
+.tablinks{
+  color: #af9e9e;
+  
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color: #ffffff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: #ffffff;
+}
+
+/* Underline effect on active tab */
+.tab button.active:after {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #910fa2; /* Underline color */
+  transition: width 0.3s; /* Adjust the duration of the animation */
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+  color: #ccc;
+  font-size: 18px;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@media only screen and (min-width:885px){
+  .section5{
+    float: left;
+    padding-left:60px ;
+  }
+  .tabcontent{
+    font-size: 16px;
+  }
+}
+
+
+
+@media (min-width:710.1px) and (max-width: 885px){
+  .section5{
+    float: right;
+    width:50%;
+    
+  }
+  .tabcontent{
+    font-size: 16px;
+  }
+
+}
+
+
+
+
+@media only screen and (max-width:710.1px){
+  .section5{
+    width: 80%;
+  float: left;
+  margin-left: 60px;
+  margin-bottom: 40px;
+
+  }
+  .tabcontent{
+    font-size: 16px;
+  }
+}
+/* point link 2 */
+.a2{
+  color: #e657b6;
+  text-decoration: none;
+}
+.a2:hover{
+  text-decoration: underline;
+}
+
+/* ------------------certification------------------ */
+.cer{
+  line-height: 2;  
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------------2 cards--------------------- */
+
+#scrollspyHeading3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background: #121212; */
+  background-image: url(7575306186001.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'poppins',sans-serif;
+}
+#scrollspyHeading3::before{
+  content: '';
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(rgb(27, 79, 44),rgb(244, 241, 69));
+  clip-path: circle(30% at right 70%); */
+}
+#scrollspyHeading3::after{
+  content: '';
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(#e91e63,#0d1862);
+  clip-path: circle(20% at 10% 10%); */
+}
+.container-3{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.container-3 .card{
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  margin-left: 50px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+.container-3 .card .content {
+  padding: 20px;
+  text-align: center;
+}
+.container-3 .card .content p{
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.container-3 .card:hover .content p{
+  transform: translateY(0px);
+  opacity: 1;
+}
+.container-3 .card .content h2{
+  transform: translateY(100px) translateX(-45px);
+  transition: 0.5s;
+  color:rgba(255, 255, 255, 0.5);
+  font-size: 8em;
+}
+.container-3 .card:hover .content h2{
+  transform: translateY(0px) translateX(0px) ;
+  color:rgba(255, 255, 255, 0.05);
+  font-size: 8em;
+}
+.container-3 .card .content a{
+  transform: translateY(30px);
+  opacity: 0.5;
+  transition: 0.5s;
+  font-weight: 300 !important;
+}
+.container-3 .card:hover .content a{
+  transform: translateY(0px);
+  opacity: 1;
+}
+.container-3 .card .content h3{
+  transform: translateY(150px);
+  transition: 0.5s;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 300 !important;
+}
+.container-3 .card:hover .content h3{
+  transform: translateY(0px);
+  color: #fff;
+}
+.container-3 .card .content h2{
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  pointer-events: none;
+}
+.container-3 .card .content h3 {
+  font-size: 1.8em;
+  z-index: 1;
+}
+.container-3 .card .content p{
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+.container-3 .card .content a{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) ;
+  transition: 0.5s;
+}
+
+.container-3 .card .content .link-2:hover{
+  box-shadow: 0 0 25px #8106d8;
+  color: #ffffff;
+  background: #8106d8;
+}
+.container-3 .card .content .link-3:hover{
+  box-shadow: 0 0 25px #8106d8;
+  color: #ffffff;
+  background: #8106d8;
+}
